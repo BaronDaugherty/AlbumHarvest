@@ -41,7 +41,7 @@ def harvest(user, local_path):
     for a in albums:
         path = local_path +a[-5:]
         os.mkdir(path)
-        print("Processing album " +a +" " +str(albums.index(a)) + " out of " +str(len(albums)))
+        print("Processing album " +a +" " +str(albums.index(a)+1) + " out of " +str(len(albums)))
         download_album(a, path)
 
 #this actually downloads the individual pics in an album
